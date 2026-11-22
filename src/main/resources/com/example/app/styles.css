@@ -1,0 +1,127 @@
+/* Theme variables. Override these in .app-root.dark for dark mode. */
+.app-root {
+    -bg: #f8fafc;
+    -surface: #ffffff;
+    -fg: #0f172a;
+    -muted: #64748b;
+    -border: #e2e8f0;
+    -accent: #6366f1;
+    -accent-hover: #818cf8;
+    -fx-background-color: -bg;
+}
+
+.app-root.dark {
+    -bg: #0f172a;
+    -surface: #1e293b;
+    -fg: #e2e8f0;
+    -muted: #94a3b8;
+    -border: #334155;
+    -accent: #818cf8;
+    -accent-hover: #a5b4fc;
+}
+
+.sidebar {
+    -fx-background-color: -surface;
+    -fx-border-color: -border;
+    -fx-border-width: 0 1 0 0;
+    -fx-padding: 20;
+}
+
+.brand {
+    -fx-text-fill: -fg;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 12 0;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -muted;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 8 12;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.nav-button:hover {
+    -fx-background-color: -border;
+    -fx-text-fill: -fg;
+}
+
+.nav-button:selected {
+    -fx-background-color: -accent;
+    -fx-text-fill: white;
+}
+
+.version {
+    -fx-text-fill: -muted;
+    -fx-font-size: 11px;
+}
+
+.content {
+    -fx-padding: 32;
+}
+
+.page {
+    -fx-padding: 8;
+}
+
+.page-title {
+    -fx-text-fill: -fg;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.page-subtitle {
+    -fx-text-fill: -muted;
+    -fx-font-size: 13px;
+}
+
+.greeting {
+    -fx-text-fill: -accent;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.hint {
+    -fx-text-fill: -muted;
+    -fx-font-size: 12px;
+}
+
+.field-label {
+    -fx-text-fill: -fg;
+    -fx-font-size: 13px;
+}
+
+.text-field {
+    -fx-background-color: -surface;
+    -fx-text-fill: -fg;
+    -fx-prompt-text-fill: -muted;
+    -fx-background-radius: 8;
+    -fx-border-color: -border;
+    -fx-border-radius: 8;
+    -fx-padding: 6 10;
+}
+
+.combo-box {
+    -fx-background-color: -surface;
+    -fx-background-radius: 8;
+    -fx-border-color: -border;
+    -fx-border-radius: 8;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: -fg;
+}
+
+.primary-button {
+    -fx-background-color: -accent;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-padding: 8 20;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: -accent-hover;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.app.ui.MainController"
+            styleClass="app-root">
+
+    <fx:define>
+        <ToggleGroup fx:id="navGroup"/>
+    </fx:define>
+
+    <left>
+        <VBox spacing="8" prefWidth="200" styleClass="sidebar">
+            <Label text="JavaFX Starter" styleClass="brand"/>
+            <ToggleButton fx:id="homeButton"
+                          text="Home"
+                          toggleGroup="$navGroup"
+                          onAction="#showHome"
+                          maxWidth="Infinity"
+                          styleClass="nav-button"/>
+            <ToggleButton fx:id="settingsButton"
+                          text="Settings"
+                          toggleGroup="$navGroup"
+                          onAction="#showSettings"
+                          maxWidth="Infinity"
+                          styleClass="nav-button"/>
+            <Region VBox.vgrow="ALWAYS"/>
+            <Label text="v0.1.0" styleClass="version"/>
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane fx:id="contentArea" styleClass="content"/>
+    </center>
+</BorderPane>

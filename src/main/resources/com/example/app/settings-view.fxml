@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.app.ui.SettingsController"
+      spacing="16"
+      styleClass="page">
+
+    <Label text="Settings" styleClass="page-title"/>
+    <Label text="Preferences are stored with java.util.prefs and restored on the next launch."
+           styleClass="page-subtitle"
+           wrapText="true"
+           maxWidth="560"/>
+
+    <HBox spacing="12" alignment="CENTER_LEFT">
+        <Label text="Theme" styleClass="field-label"/>
+        <ComboBox fx:id="themeBox" prefWidth="180"/>
+    </HBox>
+
+    <Label text="Switch to Dark, then restart the app — the choice persists."
+           styleClass="hint"
+           wrapText="true"
+           maxWidth="560"/>
+</VBox>
