@@ -25,4 +25,9 @@ class GreeterTest {
     void handlesNull() {
         assertEquals("Hello, JavaFX!", Greeter.greet(null));
     }
+
+    @Test
+    void preservesNameCaseAndPunctuation() {
+        assertEquals("Hello, ADA!", Greeter.greet("ADA"));
+    }
 }
